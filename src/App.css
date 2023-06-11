@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #101010f6;
+    font-family:  'LeferiPoint-WhiteObliqueA', sans-serif;
+    color: white;
+
+  }
+
+  .pageName{
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contents{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+font-size: 20px;
+height: 50vh;
+  }
+
+section.auth-inputs{
+    display: flex;
+    flex-direction: column;
+    height: 18%;
+    justify-content: space-between;
+}
+
+ li {
+    list-style: none;
+
+  }
+
+  ul {
+    list-style: none;
+    padding-inline-start: inherit;
+  }
+
+  input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-family:  'LeferiPoint-WhiteObliqueA', sans-serif;
+
+    }
+   
+
+    button{
+        font-family: 'LeferiPoint-WhiteObliqueA', sans-serif;
+        background-color: #ffffff0a;
+        border: 1px solid rgba(255, 255, 255, 0.382);
+        margin-left: 5px;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+
+    button.auth-button{
+        font-size: 35px;
+        border: 1px solid rgba(255, 255, 255, 0.802);
+        width: 35%;
+    }
+      
+      button.auth-button:disabled {
+        background-color: #ffffff0b;
+        border: 1px solid rgba(255, 255, 255, 0.018);
+        color: rgba(255, 255, 255, 0.137);
+        cursor: not-allowed;
+    }
+
+      
