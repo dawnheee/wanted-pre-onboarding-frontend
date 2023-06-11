@@ -23,25 +23,26 @@ function SignIn() {
       <form className="contents">
         <section className="auth-inputs">
           <input
+            data-testid="email-input"
             name="email"
             onChange={onChangeHandler}
             placeholder="email"
-            data-testid="email-input"
+            autoComplete="off"
           />
           <input
+            data-testid="password-input"
             name="password"
             type="password"
             onChange={onChangeHandler}
             placeholder="password"
-            data-testid="password-input"
           />
         </section>
         <AuthButtons>
           <button
+            data-testid="signin-button"
             type="button"
             onClick={LogInHandler}
             disabled={valid.disabled}
-            data-testid="signin-button"
             className="auth-button"
           >
             Sign In

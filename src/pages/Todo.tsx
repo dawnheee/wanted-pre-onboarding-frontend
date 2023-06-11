@@ -26,9 +26,9 @@ function TodoPage() {
         <TodoUl>
           {todoArr.length >= 1 &&
             todoArr.map((item: Todo) => (
-              <TodoList key={item.id}>
+              <li key={item.id}>
                 <ItemTodo item={item} setIsLoading={setIsLoading} />
-              </TodoList>
+              </li>
             ))}
         </TodoUl>
       </section>
@@ -37,11 +37,6 @@ function TodoPage() {
 }
 
 export default TodoPage;
-
-const TodoList = styled("li")`
-  display: flex;
-  justify-content: space-between;
-`;
 
 const TodoUl = styled("ul")`
   min-height: 70%;

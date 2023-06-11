@@ -38,6 +38,7 @@ function EditTodo({ setIsEditMode, item, setNewText, originText }: Props) {
         data-testid="modify-input"
         value={updateTodo}
         onChange={onChangeHandler}
+        name="modify"
       />
       <button data-testid="submit-button" onClick={submitHandler}>
         제출

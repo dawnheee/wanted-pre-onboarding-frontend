@@ -31,6 +31,7 @@ function CreateTodo({ setIsLoading }: Props) {
         placeholder="todo"
         onChange={handleChange}
         value={todo}
+        name="todo"
       />
       <button
         type="submit"

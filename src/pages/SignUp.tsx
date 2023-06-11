@@ -24,24 +24,25 @@ function SignUp() {
       <form className="contents">
         <section className="auth-inputs">
           <input
+            data-testid="email-input"
             placeholder="email"
             name="email"
             onChange={onChangeHandler}
-            data-testid="email-input"
+            autoComplete="off"
           />
           <input
+            data-testid="password-input"
             placeholder="password"
             name="password"
             type="password"
             onChange={onChangeHandler}
-            data-testid="password-input"
           />
         </section>
         <button
+          data-testid="signup-button"
           type="button"
           onClick={SignUpHandler}
           disabled={valid.disabled}
-          data-testid="signup-button"
           className="auth-button"
         >
           SignUp
