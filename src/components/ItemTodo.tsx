@@ -46,20 +46,19 @@ function ItemTodo({ item, setIsLoading }: Props) {
               type="checkbox"
               checked={isChecked}
               onChange={inputChecked}
+              name="todocheckbox"
             />
             <span>{todoText}</span>
           </label>
-          <section>
-            <button
-              data-testid="modify-button"
-              onClick={() => setIsEditMode(true)}
-            >
-              수정
-            </button>
-            <button data-testid="delete-button" onClick={deleteTodoItem}>
-              삭제
-            </button>
-          </section>
+          <button
+            data-testid="modify-button"
+            onClick={() => setIsEditMode(true)}
+          >
+            수정
+          </button>
+          <button data-testid="delete-button" onClick={deleteTodoItem}>
+            삭제
+          </button>
         </>
       ) : (
         <EditTodo
