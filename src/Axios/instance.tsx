@@ -19,6 +19,9 @@ instance.interceptors.response.use(
     if (error.response.data.message === "해당 사용자가 존재하지 않습니다.") {
       alert("email과 password를 확인해주세요!");
     }
+    // else if (error.response.data.message === "Unauthorized") {
+    //   console.log("안녕");
+    // }
     return Promise.reject(error);
   }
 );

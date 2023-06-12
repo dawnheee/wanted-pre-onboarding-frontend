@@ -2,7 +2,7 @@ import { instance } from "./instance";
 import { UpdateBody, User } from "types";
 
 export const getAPI = async (url: string) => {
-  //todo arr / todo get
+  // todo get
   try {
     const res = await instance.get(url);
     return res.data;

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Todo, UpdateBody } from "../types";
 import { putAPI, deleteAPI } from "../Axios/apis";
 import EditTodo from "./EditTodo";
-import styled from "@emotion/styled";
 
 type Props = {
   item: Todo;
