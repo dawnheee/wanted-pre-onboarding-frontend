@@ -1,6 +1,9 @@
 # 🌟 wanted-pre-onboarding-frontend
 
-2023년 6월 [Wanted pre-onboarding Frontend Internship](https://www.wanted.co.kr/events/pre_ob_fe_10?utm_source=wanted&utm_medium=share) 사전 과제
+#### **🙋 안녕하세요 프론트엔드 개발자를 꿈꾸는 박서희 입니다!**
+
+<br/>
+2023년 6월 [Wanted pre-onboarding Frontend Internship](https://www.wanted.co.kr/events/pre_ob_fe_11) 사전 과제
 
 <br/>
 <br/>
@@ -9,7 +12,14 @@
 
 회원가입, 로그인을 통해 유저 별 todo list를 생성·수정·삭제 할 수 있는 어플리케이션입니다.
 
-[요구사항 및 서버 디렉토리](https://github.com/walking-sunset/selection-task)
+[요구사항 및 서버 디렉토리](https://github.com/walking-sunset/selection-task#api)
+
+<br/>
+<br/>
+
+## 🍋 배포 링크
+
+https://wanted-pre-onboarding-frontend-flame.vercel.app/
 
 <br/>
 <br/>
