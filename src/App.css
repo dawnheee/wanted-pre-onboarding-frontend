@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #101010f6;
+    background-color: #f6aaaaf6;
     font-family:  'LeferiPoint-WhiteObliqueA', sans-serif;
     color: white;
 
@@ -67,9 +67,9 @@ section.auth-inputs{
     button{
         font-family: 'LeferiPoint-WhiteObliqueA', sans-serif;
         background-color: #ffffff0a;
-        border: 1px solid rgba(255, 255, 255, 0.382);
+        border: 1px solid rgba(48, 39, 39, 0.382);
         margin-left: 5px;
-        color: white;
+        color: rgb(59, 54, 54);
         border-radius: 3px;
         cursor: pointer;
     }
@@ -82,7 +82,7 @@ section.auth-inputs{
     }
       
       button.auth-button:disabled {
-        background-color: #ffffff0b;
+        background-color: #0000000b;
         border: 1px solid rgba(255, 255, 255, 0.018);
         color: rgba(255, 255, 255, 0.137);
         cursor: not-allowed;
