@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useValid } from "hooks/useValid";
 import { useCheckToken } from "hooks/useCheckToken";
 
@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { postAPI } from "../Axios/apis";
 function SignUp() {
   useCheckToken("/signup");
-
+  const ref = useRef<HTMLInputElement>(null!);
   const { onChangeHandler, userInfo, valid } = useValid();
   const navigate = useNavigate();
 
@@ -17,6 +17,13 @@ function SignUp() {
       }
     });
   };
+
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.focus();
+    }
+  }, []);
+
   return (
     <section>
       <div className="pageName">SignUp</div>
@@ -29,6 +36,7 @@ function SignUp() {
             name="email"
             onChange={onChangeHandler}
             autoComplete="off"
+            ref={ref}
           />
           <input
             data-testid="password-input"

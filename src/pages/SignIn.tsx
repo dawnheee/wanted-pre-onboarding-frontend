@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { postAPI } from "../Axios/apis";
 import { useNavigate } from "react-router-dom";
 import { useValid } from "../hooks/useValid";
@@ -8,6 +8,8 @@ import styled from "@emotion/styled";
 function SignIn() {
   const navigate = useNavigate();
   useCheckToken("/signin");
+  const ref = useRef<HTMLInputElement>(null!);
+
   const { onChangeHandler, userInfo, valid } = useValid();
   const LogInHandler = () => {
     postAPI("/auth/signin", { ...userInfo }).then((res) => {
@@ -17,6 +19,13 @@ function SignIn() {
       }
     });
   };
+
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.focus();
+    }
+  }, []);
+
   return (
     <section>
       <div className="pageName">Sign In</div>
@@ -28,6 +37,7 @@ function SignIn() {
             onChange={onChangeHandler}
             placeholder="email"
             autoComplete="off"
+            ref={ref}
           />
           <input
             data-testid="password-input"

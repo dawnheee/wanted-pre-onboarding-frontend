@@ -1,13 +1,13 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { postAPI } from "../Axios/apis";
-import styled from "@emotion/styled";
 
 type Props = {
   setIsLoading: (isLoading: boolean) => void;
 };
 function CreateTodo({ setIsLoading }: Props) {
   const [todo, setTodo] = useState("");
+  const ref = useRef<HTMLInputElement>(null!);
 
   const handleChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setTodo(e.target.value);
@@ -24,6 +24,12 @@ function CreateTodo({ setIsLoading }: Props) {
     });
   };
 
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.focus();
+    }
+  }, []);
+
   return (
     <form>
       <input
@@ -32,6 +38,7 @@ function CreateTodo({ setIsLoading }: Props) {
         onChange={handleChange}
         value={todo}
         name="todo"
+        ref={ref}
       />
       <button
         type="submit"
