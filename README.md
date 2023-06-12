@@ -55,7 +55,7 @@ https://wanted-pre-onboarding-frontend-flame.vercel.app/
 
 📌 **회원가입·로그인**
 
-<img src="https://user-images.githubusercontent.com/99721472/231049540-c7a9fd5f-341f-443c-abca-e2aeacec1306.gif" alt="유효성검사 및 회원가입 기능" />
+<img src="https://github.com/dawnheee/wanted-pre-onboarding-frontend/assets/99721472/6980252f-dcdd-4b97-a941-b6a76ae47c8c" alt="유효성검사 및 회원가입 기능" />
 
 ✔️ Assignment 1: 회원가입과 로그인 유효성 검사기능
 
@@ -72,7 +72,7 @@ https://wanted-pre-onboarding-frontend-flame.vercel.app/
 <br/>
 <br/>
 
-<img src="https://user-images.githubusercontent.com/99721472/231049574-2ca70330-420f-4cd5-89b9-a4a191e36328.gif" alt="유효성검사 및 회원가입 기능" />
+<img src="https://github.com/dawnheee/wanted-pre-onboarding-frontend/assets/99721472/372a286b-7b65-4371-80b9-4d0f7b927bcc" alt="유효성검사 및 회원가입 기능" />
 
 ✔️ Assignment 3: 로그인 기능
 
@@ -82,7 +82,7 @@ https://wanted-pre-onboarding-frontend-flame.vercel.app/
 
 <br/>
 <br/>
-<div><img src="https://user-images.githubusercontent.com/99721472/231049589-ab5135ed-d8c1-4631-b3c0-07fc9814de91.gif" width="380px" /> <img src="https://user-images.githubusercontent.com/99721472/231049596-5dbcdd43-eb22-4d3f-beeb-f13cc54b9748.gif" width="380px" ></div>
+<div><img src="https://github.com/dawnheee/wanted-pre-onboarding-frontend/assets/99721472/9f727228-0b53-4e09-b15c-db1db6647292" />
 ✔️ Assignment 4: 로그인 여부에 따른 리다이렉트 처리
 
 - 로컬 스토리지에 토큰이 있는 상태로 /signin 또는 /signup 페이지에 접속한다면 /todo 경로로 리다이렉트
@@ -93,7 +93,7 @@ https://wanted-pre-onboarding-frontend-flame.vercel.app/
 
 📌 **TODO LIST**
 
-<img src="https://user-images.githubusercontent.com/99721472/231049614-e592afda-a989-4481-b18d-ad36d8c633ca.gif" alt="TODO LIST 기능 시연"/>
+<img src="https://github.com/dawnheee/wanted-pre-onboarding-frontend/assets/99721472/625195ef-21d6-42ae-bea5-8a3b2ad50555" alt="TODO LIST 기능 시연"/>
 ✔️ Assignment 5: /todo경로에 투두 리스트
 
 - TODO의 내용과 완료 여부가 표시
